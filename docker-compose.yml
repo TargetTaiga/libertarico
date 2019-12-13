@@ -1,0 +1,15 @@
+version: '3'
+services:
+  proxy:
+    build: ./proxy
+    ports:
+      - '3000:80'
+
+  home:
+    build: ./home
+
+  wiki:
+    build: ./wiki
+
+  board:
+    build: ./board
